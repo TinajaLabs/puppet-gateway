@@ -7,9 +7,14 @@ I'll try to learn how to build a full puppet module.
 
 This is a piece of a site.pp file that can be used to puppet a home automation system on a stock distro of Raspian, Debian or Ubuntu on a Raspberry Pi, a Beaglebone Black, or an Odroid.  Every time I get a new device, I find it tedious to install all of the software from my previous system.  Here's an attempt to automate that process and end up with a new gateway that has the following packages.
 
+You'll need to learn the process of setting up a Puppet Master: 
+* https://puppetlabs.com/puppet/puppet-open-source
+* https://puppetlabs.com/misc/download-options 
+
+
 ## Packages
 
-At the end it should install the following packages:
+It should install the following packages:
 
 * Apache 2.4.7 
 * mysql 5.5.44
@@ -19,7 +24,7 @@ At the end it should install the following packages:
 * node-RED
 * graphite 0.9.13
 * grafana 2.1.3 
-* mochad 0.1.16  (this is for X-10 access)
+* [mochad 0.1.16 - this is for X-10 module access]
 
 ## Puppet Modules
 
@@ -27,8 +32,8 @@ These modules need to be installed on the puppet master to support the code in t
 
 You can typically install these modules like this:
 
-```puppet module install puppetlabs-apache```, or 
-
+```puppet module install puppetlabs-apache```
+ or  
 ```puppet module install puppetlabs-nodejs --environment development```
 
 You can search and look for newer versions at Puppet Forge: https://forge.puppetlabs.com/
