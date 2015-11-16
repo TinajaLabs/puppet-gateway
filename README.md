@@ -27,6 +27,7 @@ These modules need to be installed on the puppet master to support the code in t
 You can typically install these modules like this:
 
 ```puppet module install puppetlabs-apache```, or 
+
 ```puppet module install puppetlabs-nodejs --environment development```
 
 You can search and look for newer versions at Puppet Forge: https://forge.puppetlabs.com/
