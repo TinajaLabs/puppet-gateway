@@ -1,6 +1,7 @@
 ## Puppet a Home Automation Gateway
 
-# NOTE: First pass.  The site.pp code could be inserted into an existing site.pp.
+# NOTE: Not a puppet module.
+I'll try to learn how to build a full puppet module.
 
 ## Overview
 
